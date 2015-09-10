@@ -1,0 +1,151 @@
+@font-face {
+	font-family: 'Lato', sans-serif;
+}
+
+html {
+	font-family: 'Lato';
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+h1 {
+	-webkit-margin-before: inherit;
+	-webkit-margin-after: inherit;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.root {
+	flex-direction: column;
+}
+
+.main {
+	height: auto;
+	flex-direction: column;
+}
+
+/* Header & Navbar Styles */
+
+.header, .header .content {
+	display: flex;
+	min-height: 87px;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	z-index: 0;
+}
+
+.content {
+	margin: 0 auto;
+	padding: 0 140px;
+	align-items: center;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+.header-logo {
+	background-image: url("t-c-logo.svg");
+	display: flex;
+	width: 97px;
+	height: 42px;
+}
+
+.header-nav {
+	text-transform: uppercase;
+	display: flex;
+	margin-left: auto;
+}
+
+.header-nav a {
+	margin-left: 41px;
+}
+
+
+/* Banner Styles */
+
+.banner h1 {
+	font-size: 65px;
+}
+
+.banner h1, h2 {
+	color: #fff;
+}
+
+.banner h2 {
+	font-size: 26px;
+	line-height: 37px;
+	letter-spacing: 1px;
+	color: #fff;
+}
+
+.banner {
+	height: 644px;
+	width: 100%;
+	background: url("hero_adj_sm.jpg") no-repeat center center;
+	background-color: rgba(65, 75, 81, 0.8);
+	background-size: 100%;
+}
+
+/* How it works section styles */
+
+.howitworks {
+	padding: 70px 120px;
+}
+
+.howitworks h2, .component h2 {
+	color: #ff5d3d;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+	font-weight: 400;
+}
+
+.howitworks h1 {
+	font-size: 45px;
+	line-height: 58px;
+	letter-spacing: 2px;
+	color: #444b52;
+	font-weight: 300;
+}
+
+.container {
+	flex-direction: row;
+}
+
+.component {
+	padding-top: 51px;
+	width: 334px;
+	margin: 0 20px;
+}
+
+.component p {
+	text-align: center;
+}
+
+
+
+
+

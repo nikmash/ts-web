@@ -66,7 +66,7 @@ h2 {
 }
 
 .header-logo {
-	background-image: url("t-c-logo.svg");
+	background-image: url("img/t-c-logo.svg");
 	display: flex;
 	width: 97px;
 	height: 42px;
@@ -133,6 +133,7 @@ h2 {
 
 .container {
 	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .component {
@@ -143,6 +144,40 @@ h2 {
 
 .component p {
 	text-align: center;
+}
+
+/* Footer Styling */
+
+.footer-image {
+	width: 100%;
+	z-index: -1;
+}
+
+.footer-image-container {
+	background: url("img/footer.png") no-repeat;
+	padding: 73px 0;
+	background-size: cover;
+}
+
+.footer-nav {
+	display: flex;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-top: 80px;
+	margin-left: 110px;
+}
+
+.footer-nav a {
+	margin-left: 30px;
+}
+
+.copyright {
+	font-size: 14px;
+	margin-left: 140px;
+	letter-spacing: 1px;
+	color: #fff;
+	margin-top: 15px;
+	opacity: 0.65;
 }
 
 /* Video Styling */
@@ -160,7 +195,7 @@ h2 {
     /*display: inline-block;*/
     /*-webkit-transform: translateX(-50%) translateY(-50%);*/
     /*transform: translateX(-50%) translateY(-50%);*/
-    background: url("hero_adj_sm.jpg") no-repeat;
+    background: url("img/hero_adj_sm.jpg") no-repeat;
     background-size: cover;
 }
 

@@ -51,7 +51,7 @@ h2 {
 
 .header {
 	position: fixed;
-	z-index: 0;
+	background-color: rgba(0,0,0,0.7);
 }
 
 .content {
@@ -103,9 +103,9 @@ h2 {
 .banner {
 	height: 644px;
 	width: 100%;
-	background: url("hero_adj_sm.jpg") no-repeat center center;
-	background-color: rgba(65, 75, 81, 0.8);
+	position: relative;
 	background-size: 100%;
+	z-index: -1;
 }
 
 /* How it works section styles */
@@ -145,7 +145,31 @@ h2 {
 	text-align: center;
 }
 
+/* Video Styling */
 
+.bannervid { 
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*min-width: 100vw;*/
+    /*min-height: 100%;*/
+    width: 100%;
+    position: absolute;
+    /*height: auto;*/
+    z-index: -100;
+    /*display: inline-block;*/
+    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    background: url("hero_adj_sm.jpg") no-repeat;
+    background-size: cover;
+}
 
-
-
+.vidbackground {
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	z-index: -100;
+}

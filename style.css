@@ -33,9 +33,15 @@ h2 {
 }
 
 button {
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+
+}
+
+.signup-footer button {
 	text-transform: uppercase;
 	width: 170px;
-	height: 40px;
 	border-radius: 2px;
 	color: #fff;
 	background-color: #ff5d3b;
@@ -43,11 +49,23 @@ button {
 	letter-spacing: 1.5px;
 	line-height: 14px;
 	font-size: 12px;
-	margin-left: auto;
-	margin-right: auto;
 	border: inherit;
 	margin-top: 20px;
 	box-shadow: -1px 1px 2px 0px;
+}
+
+.banner button {
+	text-transform: uppercase;
+	width: 170px;
+	border-radius: 2px;
+	color: #fff;
+	background-color: #ff5d3b;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	line-height: 14px;
+	font-size: 12px;
+	border: inherit;
+	margin-top: 20px;
 }
 
 .root {
@@ -116,6 +134,7 @@ button {
 	line-height: 37px;
 	letter-spacing: 1px;
 	color: #fff;
+	font-weight: 300;
 }
 
 .banner {
@@ -124,6 +143,14 @@ button {
 	position: relative;
 	background-size: 100%;
 	z-index: -1;
+}
+
+.bannerarrow {
+	margin-top: 90px;
+}
+
+.banner .container {
+	padding-top: 90px;
 }
 
 /* How it works section styles */
@@ -141,7 +168,7 @@ button {
 	font-weight: 400;
 }
 
-.howitworks h1, .signup-footer h1 {
+.howitworks h1, .signup-footer h1, .upcomingevents h1 {
 	font-size: 45px;
 	line-height: 58px;
 	letter-spacing: 2px;
@@ -209,6 +236,39 @@ button {
 	flex-direction: row;
 }
 
+/* Testimonials Section Styling */
+.testimonials {
+	background: url("img/savor-the-chefs-best.svg");
+}
+
+.testimonials .container {
+	padding: 70px 0;
+}
+
+.testimonials h1 {
+	font-size: 45px;
+	font-weight: 300;
+	color: #fff;
+}
+
+/* Upcoming Events Styling */
+.upcomingevents button {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid rgba(68, 75, 81, 0.5);
+	width: 236px;
+	background-color: #fff;
+	border-radius: 4px;
+	font-size: 12px;
+	letter-spacing: 1.5px;
+	color: #444b52;
+}
+
+.upcomingevents {
+	padding: 70px 0;
+}
+
 /* Signup Footer Styling */
 .signup-footer {
 	padding: 70px 0;
@@ -272,6 +332,7 @@ button {
     /*transform: translateX(-50%) translateY(-50%);*/
     background: url("img/hero_adj_sm.jpg") no-repeat;
     background-size: cover;
+    min-width: 1180px;
 }
 
 .vidbackground {

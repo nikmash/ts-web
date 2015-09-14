@@ -156,7 +156,7 @@ button {
 
 .howitworks .component {
 	padding-top: 51px;
-	width: 334px;
+	max-width: 334px;
 	margin: 0 20px;
 }
 
@@ -189,6 +189,24 @@ button {
 	line-height: 35px;
 	font-size: 18px;
 	text-align: center;
+}
+
+.playbutton {
+	display: inline-block;
+	width: 40px;
+	margin-left: 10px;
+}
+
+.watchourvideo {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 36px;
+	letter-spacing: 1.5px;
+	color: #fff;
+}
+
+.watchourvideo-container {
+	flex-direction: row;
 }
 
 /* Signup Footer Styling */

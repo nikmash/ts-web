@@ -21,14 +21,19 @@
     <!-- Stuff -->
     <meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		
+	
 		<!-- Stylesheet -->
 		<link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 
   </head>
   <body>
   	<section class="root">
   		<header class="header">
+        <div class="left-margin"></div>
   			<div class="content">
   				<div class="header-logo"></div>
   				<div class="header-nav">
@@ -36,8 +41,10 @@
   					<a href="#">About</a>
   					<a href="#">Contact</a>
   					<a href="#">Login</a>
+            <button id='nav-button' class="hidden">Sign Up Free</button>
   				</div>
   			</div>
+        <div class="right-margin"></div>
   		</header>
 
   		<section class="main">
@@ -95,6 +102,12 @@
         <section class="upcomingevents">
           <section class="container">
             <h1>Upcoming Events</h1>
+            <section class="row-container">
+              <section class="component">
+              </section>
+              <section class="component">
+              </section>
+            </section>
             <button>See Past Events</button>
           </section>
         </section>

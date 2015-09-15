@@ -54,7 +54,7 @@ button {
 	box-shadow: -1px 1px 2px 0px;
 }
 
-.banner button {
+.banner button, .header button {
 	text-transform: uppercase;
 	width: 170px;
 	border-radius: 2px;
@@ -87,18 +87,23 @@ button {
 
 .header {
 	position: fixed;
-	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
 }
 
-.content {
+.header .content {
 	margin: 0 auto;
-	padding: 0 140px;
+	/*padding: 0 140px;*/
 	align-items: center;
 	top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
 	z-index: 10;
+	flex: 0 1 auto;
+}
+
+.right-margin, .left-margin {
+	width: 140px;
 }
 
 .header-logo {
@@ -112,12 +117,23 @@ button {
 	text-transform: uppercase;
 	display: flex;
 	margin-left: auto;
+	align-items: center;
 }
 
 .header-nav a {
 	margin-left: 41px;
 }
 
+.hidden {
+	display: none;
+}
+
+#nav-button {
+	margin-top: inherit;
+	margin-left: 41px;
+	height: 35px;
+	width: 160px;
+}
 
 /* Banner Styles */
 
@@ -142,7 +158,7 @@ button {
 	width: 100%;
 	position: relative;
 	background-size: 100%;
-	z-index: -1;
+	background-color: rgba(68, 75, 81, 0.8);
 }
 
 .bannerarrow {
@@ -151,6 +167,36 @@ button {
 
 .banner .container {
 	padding-top: 90px;
+}
+
+/* Video Styling */
+
+.bannervid { 
+    /*position: fixed;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*min-width: 100vw;*/
+    /*min-height: 100%;*/
+    width: 100%;
+    position: absolute;
+    /*height: auto;*/
+    z-index: -100;
+    /*display: inline-block;*/
+    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+    /*transform: translateX(-50%) translateY(-50%);*/
+    background: url("img/hero_adj_sm.jpg") no-repeat;
+    background-size: cover;
+    min-width: 1180px;
+}
+
+.vidbackground {
+	overflow: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: absolute;
+	z-index: -100;
 }
 
 /* How it works section styles */
@@ -269,6 +315,10 @@ button {
 	padding: 70px 0;
 }
 
+.upcomingevents .row-container{
+	flex-direction: row;
+}
+
 /* Signup Footer Styling */
 .signup-footer {
 	padding: 70px 0;
@@ -315,32 +365,4 @@ button {
 	opacity: 0.65;
 }
 
-/* Video Styling */
 
-.bannervid { 
-    /*position: fixed;*/
-    /*top: 50%;*/
-    /*left: 50%;*/
-    /*min-width: 100vw;*/
-    /*min-height: 100%;*/
-    width: 100%;
-    position: absolute;
-    /*height: auto;*/
-    z-index: -100;
-    /*display: inline-block;*/
-    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
-    /*transform: translateX(-50%) translateY(-50%);*/
-    background: url("img/hero_adj_sm.jpg") no-repeat;
-    background-size: cover;
-    min-width: 1180px;
-}
-
-.vidbackground {
-	overflow: hidden;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	position: absolute;
-	z-index: -100;
-}

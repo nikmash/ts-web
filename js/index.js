@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$(window).scroll(function(){ 
+	$(window).scroll(function(){
 		var headerpos = 50;
 		var pos = $(window).scrollTop();
 		if(pos > headerpos) {
@@ -28,5 +28,51 @@ $(document).ready(function() {
 				'display': 'none'
 			})
 		}
-	});	
+	});
+
+	$('.slick-carousel').slick({
+		centerMode: true,
+		arrows: true,
+		slidesToShow: 3,
+		centerPadding: '40px',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: true,
+					centerMode: true,
+					centerPadding: '40px',
+					slidesToShow: 2
+				}
+			}
+		]
+	});
+
+	// Slick Carousel
+	// $('.slick-carousel').slick({
+	//   centerMode: true,
+	//   centerPadding: '60px',
+	//   slidesToShow: 3,
+	//   responsive: [
+	//     {
+	//       breakpoint: 768,
+	//       settings: {
+	//         arrows: true,
+	//         centerMode: true,
+	//         centerPadding: '40px',
+	//         slidesToShow: 3
+	//       }
+	//     },
+	//     {
+	//       breakpoint: 480,
+	//       settings: {
+	//         arrows: true,
+	//         centerMode: true,
+	//         centerPadding: '40px',
+	//         slidesToShow: 1
+	//       }
+	//     }
+	//   ]
+	// });
+
 });

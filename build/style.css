@@ -82,7 +82,7 @@ button {
 
 /* iPhone */
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 627px) {
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 	.header-nav {
 		display: none;
 	}

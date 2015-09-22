@@ -41,7 +41,7 @@ button {
 
 }
 
-.signup-footer button, .our-member-benefits button {
+.signup-footer button, .our-member-benefits button, .contact button {
 	text-transform: uppercase;
 	width: 170px;
 	border-radius: 2px;
@@ -145,7 +145,6 @@ button {
 }
 
 .header-about {
-	position: inherit;
 	background-color: #333;
 }
 
@@ -188,6 +187,11 @@ button {
 
 .banner .container {
 	padding-top: 90px;
+}
+
+/* Move main down due to banner fixed */
+.about-page .main {
+	margin-top: 87px;
 }
 
 /* Video Styling */
@@ -235,7 +239,7 @@ button {
 	font-weight: 400;
 }
 
-.howitworks h1, .signup-footer h1, .upcomingevents h1, .about-page h1 {
+.howitworks h1, .signup-footer h1, .upcomingevents h1, .about-page h1, .contact h1 {
 	font-size: 45px;
 	line-height: 58px;
 	letter-spacing: 2px;
@@ -400,6 +404,7 @@ button {
 	background-size: cover;
 	flex-direction: row;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .footer-nav {
@@ -426,10 +431,12 @@ button {
 /* About Page - Our Mission */
 .our-mission, .our-dining-events, .our-member-benefits{
 	flex-direction: row;
+	padding: 0 20px;
 }
 
 .about-page p {
-	width: 630px;
+	max-width: 630px;
+	width: 100%;
 	font-size: 18px;
 	line-height: 35px;
 	color: #444b52;
@@ -450,7 +457,7 @@ button {
 	width: 460px;
 	height: 500px;
 	margin-top: 63px;
-	margin-left: 35px;
+
 }
 
 .our-dining-events-img {
@@ -562,6 +569,50 @@ button {
 
 .thumbnail-active {
 	border-bottom: #ff5d3b 3px solid;
+}
+
+/* Contact Page Styling */
+.contact {
+	margin: 70px 0;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.contact button {
+	width: 100%;
+	max-width: 640px;
+}
+
+.contact input {
+	text-transform: uppercase;
+	max-width: 620px;
+	width: 100%;
+	height: 38px;
+	background-color: #fff;
+	border-radius: 2px;
+	border-color: #ededed;
+	margin-bottom: 20px;
+	border-style: solid;
+	padding-left: 15px;
+	color: #d8d8d8;
+	font-size: 14px;
+}
+
+.contact input:focus {
+	outline: none;
+}
+
+.contact .lg {
+	padding-bottom: 114px;
+}
+
+.contact p {
+	max-width: 630px;
+	font-weight: 400;
+	font-size: 18px;
+	color: #444b52;
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 /* Social Nav */

@@ -41,7 +41,7 @@ button {
 
 }
 
-.signup-footer button {
+.signup-footer button, .our-member-benefits button {
 	text-transform: uppercase;
 	width: 170px;
 	border-radius: 2px;
@@ -54,6 +54,11 @@ button {
 	border: inherit;
 	margin-top: 20px;
 	box-shadow: -1px 1px 2px 0px;
+}
+
+.our-member-benefits button {
+	margin-left: inherit;
+	margin-right: inherit;
 }
 
 .banner button, .header button {
@@ -137,6 +142,11 @@ button {
 
 .hidden {
 	display: none;
+}
+
+.header-about {
+	position: inherit;
+	background-color: #333;
 }
 
 #nav-button {
@@ -225,7 +235,7 @@ button {
 	font-weight: 400;
 }
 
-.howitworks h1, .signup-footer h1, .upcomingevents h1 {
+.howitworks h1, .signup-footer h1, .upcomingevents h1, .about-page h1 {
 	font-size: 45px;
 	line-height: 58px;
 	letter-spacing: 2px;
@@ -342,6 +352,7 @@ button {
 .slick-carousel .slick-center {
 	transform: scale(1.125);
 }
+
 /* Upcoming Events Styling */
 .upcomingevents button {
 	-moz-box-sizing: border-box;
@@ -387,6 +398,8 @@ button {
 	background: url("img/footer.png") no-repeat;
 	padding: 73px 0;
 	background-size: cover;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .footer-nav {
@@ -408,4 +421,180 @@ button {
 	color: #fff;
 	margin-top: 15px;
 	opacity: 0.65;
+}
+
+/* About Page - Our Mission */
+.our-mission, .our-dining-events, .our-member-benefits{
+	flex-direction: row;
+}
+
+.about-page p {
+	width: 630px;
+	font-size: 18px;
+	line-height: 35px;
+	color: #444b52;
+	font-weight: 400;
+}
+
+.about-page h1 {
+	text-align: inherit;
+}
+
+.our-mission .content {
+	margin-right: 35px;
+	max-width: 630px;
+}
+
+.our-mission-img {
+	background: url("img/photo-1.png") no-repeat;
+	width: 460px;
+	height: 500px;
+	margin-top: 63px;
+	margin-left: 35px;
+}
+
+.our-dining-events-img {
+	background: url("img/photo-2.png") no-repeat;
+	width: 460px;
+	height: 500px;
+	margin-right: 35px;
+}
+
+.our-member-benefits-img {
+	background: url("img/photo-3.png") no-repeat;
+	width: 460px;
+	height: 500px;
+	margin-left: 35px;
+	margin-bottom: 70px
+}
+
+/* About Page - Picture Carousel */
+
+.selected-picture {
+	height: 600px;
+	width: 100%;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.picture-1 {
+	background: url("img/t-c-1.png") no-repeat;
+	background-size: cover;
+}
+
+.picture-2 {
+	background: url("img/t-c-1.png") no-repeat;
+	background-size: cover;
+}
+
+.picture-3 {
+	background: url("img/t-c-1.png") no-repeat;
+	background-size: cover;
+}
+
+.picture-4 {
+	background: url("img/t-c-1.png") no-repeat;
+	background-size: cover;
+}
+
+.picture-5 {
+	background: url("img/t-c-1.png") no-repeat;
+	background-size: cover;
+}
+
+.carousel-prev, .carousel-next {
+	width: 50px;
+	height: 100%;
+	background-color: #333;
+	opacity: 0.68;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.prev-arrow, .next-arrow {
+	width: 22px;
+	height: 22px;
+}
+
+.prev-arrow {
+	background: url("img/arrow.svg") no-repeat;
+}
+
+.next-arrow {
+	background: url("img/arrow.svg") no-repeat;
+	transform: rotate(180deg);
+}
+
+.thumbnail-pictures {
+	flex-direction: row;
+}
+
+.thumbnail-pictures img {
+	width: 288px;
+	height: 200px;
+	box-sizing: border-box;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.thumbnail1 {
+	/*background: url("img/t-c-thumb-1.png") no-repeat;*/
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.thumbnail2 {
+	background: url("img/t-c-thumb-2.png") no-repeat;
+}
+
+.thumbnail3 {
+	background: url("img/t-c-thumb-3.png") no-repeat;
+}
+
+.thumbnail4 {
+	background: url("img/t-c-thumb-4.png") no-repeat;
+}
+
+.thumbnail5 {
+	background: url("img/t-c-thumb-5.png") no-repeat;
+}
+
+.thumbnail-active {
+	border-bottom: #ff5d3b 3px solid;
+}
+
+/* Social Nav */
+.social-nav div{
+	display: inline-block;
+	margin-right: 30px;
+}
+
+.social-nav {
+	margin-top: 80px;
+	margin-right: 110px;
+}
+
+.facebook {
+	background: url("img/facebook.svg") no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
+.instagram {
+	background: url("img/instagram.svg") no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
+.email {
+	background: url("img/email.svg") no-repeat;
+	width: 40px;
+	height: 40px;
+}
+
+.twitter {
+	background: url("img/twitter.svg") no-repeat;
+	width: 40px;
+	height: 40px;
 }

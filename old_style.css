@@ -178,7 +178,7 @@ button {
 	width: 100%;
 	position: relative;
 	background-size: 100%;
-	background-color: rgba(68, 75, 81, 0.8);
+	background-color: rgba(68, 75, 81, 0.6);
 }
 
 .bannerarrow {
@@ -613,8 +613,13 @@ button {
 	color: #444b52;
 	text-align: center;
 	margin-bottom: 40px;
+	-webkit-margin-before: initial;
+	margin-top: -40px;
 }
 
+.root .contact {
+	align-content: space-between;
+}
 /* Social Nav */
 .social-nav div{
 	display: inline-block;

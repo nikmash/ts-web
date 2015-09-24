@@ -28,6 +28,11 @@ h1 {
 	text-align: center;
 }
 
+h3 {
+	-webkit-margin-before: inherit;
+	-webkit-margin-after: inherit;
+}
+
 h2 {
 	text-align: center;
 }
@@ -77,10 +82,32 @@ button {
 
 /* iPhone */
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
-	.header-nav {
+@media only screen and (max-width: 650px) {
+	.header .header-nav {
 		display: none;
 	}
+
+	.header .header-logo {
+		display: none;
+	}
+
+	.main .banner {
+		background: url("img/TCMobile.png") no-repeat;
+		background-size: cover;
+	}
+
+	.vidbackground {
+		display: none;
+	}
+
+	.main .howitworks {
+		padding: inherit;
+	}
+
+	.howitworks .container {
+		flex-wrap: wrap;
+	}
+
 
 }
 
@@ -249,7 +276,6 @@ button {
 
 .howitworks .container {
 	flex-direction: row;
-	/*flex-wrap: wrap;*/
 }
 
 .howitworks .component {
@@ -375,8 +401,73 @@ button {
 	padding: 70px 0;
 }
 
-.upcomingevents .row-container{
+.upcomingevents .row-container {
 	flex-direction: row;
+	margin-bottom: 80px;
+}
+
+.upcomingevents .container h1 {
+	margin-bottom: 54px;
+}
+
+.upcomingevents .component {
+	max-width: 457px;
+	margin: 0 30px;
+	box-sizing: border-box;
+	border: 1px solid rgba(68, 75, 81, 0.3);
+	border-radius: 4px;
+	background-color: #fff;
+	box-shadow: 0px 1px 2px 0px rgba(68, 75, 81, 0.25);
+}
+
+.upcomingevents .component h3 {
+	font-size: 30px;
+	letter-spacing: 1px;
+	color: #444b52;
+}
+
+.upcomingevents .component .cuisine {
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #ff5d3b;
+	letter-spacing: 2px;
+}
+
+.upcomingevents .component .content {
+	padding: 20px
+}
+
+.eventinfo {
+	height: 25px;
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+	justify-content: space-between;
+}
+
+.eventinfo .calendar {
+	height: 23px;
+	width: 27px;
+}
+
+.eventinfo .clock {
+	height: 23px;
+	width: 23px;
+}
+
+.eventinfo .location {
+	height: 23px;
+	width: 13px;
+}
+
+.eventinfo label {
+	margin-left: 6px;
+	margin-right: 8px;
+}
+
+.eventinfo div {
+	display: flex;
+	align-items: center;
 }
 
 /* Signup Footer Styling */

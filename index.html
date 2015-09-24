@@ -41,7 +41,7 @@
   					<a href="#">Home</a>
   					<a href="./about.html">About</a>
   					<a href="./contact.html">Contact</a>
-  					<a href="#">Login</a>
+  					<a href="#login-modal" class="login-window">Login</a>
             <button id='nav-button' class="hidden">Request An Invite</button>
   				</div>
   			</div>
@@ -92,11 +92,51 @@
           <section class="container">
             <h1>Upcoming Events</h1>
             <section class="row-container">
+
+							<section class="left-margin">
+							</section>
+
               <section class="component">
-								<img src="" />
+								<img src="img/feast-1.png" />
+								<div class="content">
+									<h3>Kikuchi Japanese Bistro</h3>
+									<label class="cuisine">Japanese</label>
+									<div class="eventinfo">
+										<div>
+											<img class="calendar" src="img/calendar-icon.svg" /> <label>Tuesday, 11/4/15</label>
+										</div>
+										<div>
+											<img class="clock" src="img/clock-icon.svg" />	<label>6:30PM</label>
+										</div>
+										<div>
+											<img class="location" src="img/map-marker.svg" />	<label>Upper East Side</label>
+										</div>
+									</div>
+								</div>
               </section>
+
               <section class="component">
+								<img src="img/feast-2.png" />
+								<div class="content">
+									<h3>Mars &amp; Bars</h3>
+									<label class="cuisine">Greek</label>
+									<div class="eventinfo">
+										<div>
+											<img class="calendar" src="img/calendar-icon.svg" /> <label>Tuesday, 11/4/15</label>
+										</div>
+										<div>
+											<img class="clock" src="img/clock-icon.svg" />	<label>6:30PM</label>
+										</div>
+										<div>
+											<img class="location" src="img/map-marker.svg" />	<label>Upper East Side</label>
+										</div>
+									</div>
+								</div>
               </section>
+
+							<section class="right-margin">
+							</section>
+
             </section>
             <button>See Past Events</button>
           </section>
@@ -161,6 +201,27 @@
         </section>
 
   		</section>
+
+			<div id="login-modal" class="login-popup">
+			  <form method="post" class="signin" action="#">
+	        <fieldset class="textbox">
+		        <label class="username">
+		        <span>Username or email</span>
+		        <input id="username" name="username" value="" type="text" autocomplete="on" placeholder="Username">
+		        </label>
+		        <label class="password">
+		        <span>Password</span>
+		        <input id="password" name="password" value="" type="password" placeholder="Password">
+		        </label>
+		        <button class="submit button">Sign in</button>
+		        <p>
+		        <a class="forgot" href="#">Forgot your password?</a>
+		        </p>
+	        </fieldset>
+			  </form>
+			</div>
   	</section>
+
+
   </body>
 </html>
